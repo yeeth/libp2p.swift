@@ -12,6 +12,7 @@ let package = Package(
             targets: ["libp2p"]),
     ],
     dependencies: [
+        //.package(url: "https://github.com/multiformats/SwiftMultiaddr.git", from: "0.2.2")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
