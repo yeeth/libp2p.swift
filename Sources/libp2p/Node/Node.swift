@@ -12,11 +12,9 @@ public class Node {
             case .stopped:
                 delegate?.nodeDidStop(self)
             case .starting:
-                // @todo
-                return
+                onStarting()
             case .stopping:
-                // @todo
-                return
+                onStopping()
             }
         }
     }
@@ -41,6 +39,14 @@ public class Node {
     }
 
     func ping(peer: Any) {
+
+    }
+
+    private func onStarting() {
+
+    }
+
+    private func onStopping() {
 
     }
 }
