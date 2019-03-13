@@ -23,7 +23,7 @@ class PeerBook {
     // @todo MultiAddr type
     func getMultiAddrs(_ peer: Any) -> [Data]? {
         let info = get(peer)
-        return info.multiaddrs
+        return info?.multiaddrs
     }
 
     func b58String(_ peer: Any) -> String {
