@@ -1,3 +1,5 @@
+import Foundation
+
 public class Node {
 
     var delegate: NodeDelegate?
