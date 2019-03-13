@@ -23,7 +23,19 @@ public class Node {
     }
 
     // @todo on the any
-    func dialProtocol(peer: Any, protocol: String) {
+    func dial(peer: Any, protocol: String) {
+
+    }
+
+    func dialFSM(peer: Any, protocol: String) {
+
+    }
+
+    func hangUp(peer: Any) {
+
+    }
+
+    func ping(peer: Any) {
 
     }
 }
