@@ -6,12 +6,17 @@ public class Node {
 
     var state: State {
         didSet {
-            if state == .started {
+            switch (state) {
+            case .started:
                 delegate?.nodeDidStart(self)
-            }
-
-            if state == .stopped {
+            case .stopped:
                 delegate?.nodeDidStop(self)
+            case .starting:
+                // @todo
+                return
+            case .stopping:
+                // @todo
+                return
             }
         }
     }
