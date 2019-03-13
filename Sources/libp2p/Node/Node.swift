@@ -1,5 +1,7 @@
 class Node {
 
+    var delegate: NodeDelegate?
+
     var state: State
     var peerBook: PeerBook
 
