@@ -26,6 +26,10 @@ public class Node {
         peerBook = PeerBook()
     }
 
+    func isStarted() {
+        return state == .started
+    }
+
     // @todo on the any
     func dial(peer: Any, protocol: String) {
 
