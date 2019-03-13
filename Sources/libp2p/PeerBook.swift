@@ -1,4 +1,5 @@
 import Foundation
+import SwiftMultiaddr
 
 class PeerBook {
 
@@ -21,7 +22,7 @@ class PeerBook {
     }
 
     // @todo MultiAddr type
-    func getMultiAddrs(_ peer: Any) -> [Data]? {
+    func getMultiAddrs(_ peer: Any) -> [MultiAddr]? {
         let info = get(peer)
         return info?.multiaddrs
     }
