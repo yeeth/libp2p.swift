@@ -1,6 +1,7 @@
 class Node {
 
     var state: State
+    var peerBook: PeerBook
 
     init() {
         state = .stopped
