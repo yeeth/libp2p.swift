@@ -26,7 +26,7 @@ public class Node {
         peerBook = PeerBook()
     }
 
-    func isStarted() {
+    func isStarted() -> Bool {
         return state == .started
     }
 
