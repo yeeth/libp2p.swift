@@ -4,7 +4,18 @@ public class Node {
 
     var delegate: NodeDelegate?
 
-    var state: State
+    var state: State {
+        didSet {
+            if state == .started {
+                delegate?.nodeDidStart(self)
+            }
+
+            if state == .stopped {
+                delegate?.nodeDidStop(self)
+            }
+        }
+    }
+
     var peerBook: PeerBook
 
     init() {
