@@ -4,7 +4,7 @@ public class Node {
 
     var delegate: NodeDelegate?
 
-    var state: State {
+    private(set) var state: State {
         didSet {
             switch (state) {
             case .started:
@@ -19,10 +19,11 @@ public class Node {
         }
     }
 
-    var peerBook: PeerBook
+    private(set) var peerBook: PeerBook
 
     init() {
         state = .stopped
+        peerBook = PeerBook()
     }
 
     // @todo on the any
