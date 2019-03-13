@@ -7,7 +7,8 @@ class Node {
         state = .stopped
     }
 
-    func dialProtocol(peer: Peer, protocol: String) {
+    // @todo on the any
+    func dialProtocol(peer: Any, protocol: String) {
 
     }
 }

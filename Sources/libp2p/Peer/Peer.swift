@@ -1,7 +1,8 @@
 import Foundation
 
-struct Peer {
-    let peerInfo: Data // @todo
-    let peerId: Data // @todo
-    let multiaddr: Data // @todo
+struct PeerInfo {
+    let id: Data // @todo
+    let multiaddrs: [Data] // @todo
+    let protocols: [String] // @todo
+
 }
