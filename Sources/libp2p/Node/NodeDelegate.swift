@@ -1,6 +1,6 @@
 import Foundation
 
-protocol NodeDelegate {
+public protocol NodeDelegate {
 
     func node(_ node: Node, didEmitError: Error);
     func node(_ node: Node, didConnectPeer: PeerInfo);

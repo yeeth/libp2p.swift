@@ -1,4 +1,4 @@
-class Node {
+public class Node {
 
     var delegate: NodeDelegate?
 
