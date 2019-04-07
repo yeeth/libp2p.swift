@@ -1,6 +1,0 @@
-github "NeoTeo/SwiftBase58" "v0.5.2"
-github "NeoTeo/SwiftGMP" "v0.4.9"
-github "NeoTeo/SwiftHex" "v0.4.1"
-github "NeoTeo/SwiftMultihash" "v2.0.8"
-github "NeoTeo/VarInt" "v0.2.1"
-github "multiformats/SwiftMultiaddr" "v0.2.5"
